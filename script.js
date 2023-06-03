@@ -36,15 +36,15 @@ function handleClick(event) {
 
 function updateGameStatus() {
   const gameStatus = document.getElementById("gameStatus");
-  const winner1 = gameBoard.checkWinner("O");
-  const winner2 = gameBoard.checkWinner("X");
+  const winner1 = gameBoard.checkWinner("X");
+  const winner2 = gameBoard.checkWinner("O");
 
   if (winner1) {
-    gameStatus.textContent = "Computer won!";
+    gameStatus.textContent = "You won!";
     
   } 
 else if (winner2) {
-    gameStatus.textContent = "You won!";
+    gameStatus.textContent = "Computer won!";
   }
 
 
