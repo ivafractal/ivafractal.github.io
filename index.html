@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Web Application</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+    <div id="game-board">
+        <div id="cell-0-0" class="cell"></div>
+        <div id="cell-0-1" class="cell"></div>
+        <div id="cell-0-2" class="cell"></div>
+        <div id="cell-1-0" class="cell"></div>
+        <div id="cell-1-1" class="cell"></div>
+        <div id="cell-1-2" class="cell"></div>
+        <div id="cell-2-0" class="cell"></div>
+        <div id="cell-2-1" class="cell"></div>
+        <div id="cell-2-2" class="cell"></div>
     </div>
-    <div id="message"></div>
-    <script src="./script.js"></script>
+    <p id="gameStatus"></p>
+
+    <script type="module" src="./gameBoard.js"></script>
+    <script type="module" src="./computerPlayer.js"></script>
+    <script type="module" src="./humanPlayer.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
