@@ -43,11 +43,9 @@ function updateGameStatus() {
     gameStatus.textContent = "Computer won!";
     
   } 
-    else if (winner2) {
+else if (winner2) {
     gameStatus.textContent = "You won!";
   }
-  else if(gameBoard.checkTie()){
-    gameStatus.textContent = "Tie!";
-  }
+
 
 }

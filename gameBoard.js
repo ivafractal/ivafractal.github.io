@@ -56,18 +56,7 @@ export const gameBoard = (() => {
       return true;
     }
   }
-    const checkTie = () => {
-        for (let i = 0; i < 3; i++) {
-            for(let j=0; j<3;j++){
-                if((boardState[i][j] != 'X') && (boardState[i][j] != 'O')){
-                    return false;
-                }
-            }
-            return true;
-        }
 
-    return false;
-  };
 
   return {
     boardState,
@@ -75,7 +64,6 @@ export const gameBoard = (() => {
     renderBoard,
     makeMove,
     checkWinner,
-    checkTie
   };
 })();
 
